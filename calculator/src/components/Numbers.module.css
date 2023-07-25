@@ -1,0 +1,19 @@
+.numbSection {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.numbSection > div {
+    background-color: #1E1E1E;
+    color: white;
+    padding: 6px;
+    margin: 6px;
+    font-size: 20px;
+    text-align: center;
+}
+.numbSection > div:hover {
+    background-color: #333333;
+    cursor: pointer;
+}

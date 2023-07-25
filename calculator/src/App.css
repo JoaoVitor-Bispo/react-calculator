@@ -1,0 +1,12 @@
+body {
+  background-image: linear-gradient(to right, #480612, #951B34) 
+}
+.main {
+  background-color: #160106;
+  color: white;
+  padding: 0px 15px 15px 15px;
+  width: 18%;
+  margin: 20vh auto;
+  text-align: center;
+  border-radius: 10px;
+}
