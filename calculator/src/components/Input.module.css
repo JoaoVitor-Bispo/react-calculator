@@ -1,8 +1,9 @@
-.inputContainer {
-    width: 100%;
+.divInput {
+    margin-bottom: 15px;
 }
-input {
-    width: 95%;
-    height: 40px;
-    margin-bottom: 20px;
+.divInput > input {
+    width: 80%;
+    height: 35px;
+    border-radius: 8px;
+    padding: 0px 15px;
 }

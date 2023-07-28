@@ -1,12 +1,16 @@
 import styles from './Input.module.css'
-import ReceiveNum from './ReceiveNum'
+import Calculator from './Calculator';
 
-function Input(param) {
-
+function Input({value}) {
+    console.log(value)
     return (
-        <div className={styles.inputContainer}>
-            <input type="number"/>
+        <div className={styles.divInput}>
+            <input type="number" value="0" className='input'/>
+            {
+                document.querySelector('.input').innerHTML += value
+            }
         </div>
     )
 }
-export default Input
+
+export default Input;

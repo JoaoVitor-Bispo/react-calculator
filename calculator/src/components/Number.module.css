@@ -1,0 +1,12 @@
+.divNums {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.divNums > div {
+    background-color: #222222;
+    margin: 5px;
+    padding: 8px;
+    font-size: 22px;
+}
