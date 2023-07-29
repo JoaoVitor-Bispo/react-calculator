@@ -8,19 +8,21 @@ function Number() {
     
     const areaButtons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '+', '-', '*', '/', '.', '=']
     const [clicked, setClicked] = useState([])
+    const array = []
 
     const setNum = (e) => {
-        setClicked(e.target.innerHTML)
+        array.push(e.target.innerHTML)
+        setClicked((array) => [...array, e.target.innerHTML])
     }
 
 
     return (
         <div>
             {
-                clicked ? (
+                clicked.length > 0 ? (
                     <Input value={clicked}/>
                 ) : (
-                    setClicked(0)
+                    <Input value={'0'}/>
                 )
         }
             <div className={styles.divNums}>
