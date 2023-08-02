@@ -1,12 +1,11 @@
 import styles from './Number.module.css'
 import Calculator from './Calculator';
 import { useState } from 'react';
-import ReceiveNum from './ReceiveNum';
 import Input from './Input';
 
 function Number() {
     
-    const areaButtons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '+', '-', '*', '/', '.', '=']
+    const areaButtons = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, '+', '-', '*', '/', '.', '=', 'x', 'C']
     const [clicked, setClicked] = useState([])
     const array = []
 
@@ -20,15 +19,15 @@ function Number() {
         <div>
             {
                 clicked.length > 0 ? (
-                    <Input value={clicked}/>
+                        <Calculator expression={clicked}/>
                 ) : (
-                    <Input value={'0'}/>
+                    <Calculator expression={'0'}/>
                 )
         }
             <div className={styles.divNums}>
                 {
                     areaButtons.map((element, index) => (
-                        <div onClick={setNum} key={index}>{element}</div>
+                        <div onClick={setNum} key={index} className={`${styles['num'+index]}`}>{element}</div>
                     ))
                 }
             </div>

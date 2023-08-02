@@ -3,10 +3,17 @@
     margin: auto;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 'clear clear delete delete';
 }
 .divNums > div {
     background-color: #222222;
     margin: 5px;
     padding: 8px;
     font-size: 22px;
+}
+.num16 { 
+    grid-area: delete;
+}
+.num17 {
+    grid-area: clear;
 }

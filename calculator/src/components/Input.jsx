@@ -3,7 +3,6 @@ import Calculator from './Calculator';
 
 function Input({value}) {
     const array = []
-    console.log(value)
     return (
         <div className={styles.divInput}>
             <input type="number" className='input'/>
