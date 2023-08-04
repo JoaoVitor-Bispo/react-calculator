@@ -1,12 +1,26 @@
+:root {
+  --bgblue: #3A4764;
+  --bgcalc: #182034;
+  --buttons: #EAE3DC;
+  --bluefont: #444B5A;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
 body {
-  background-image: linear-gradient(to right, #480612, #951B34) 
+  background-color: var(--bgblue); 
+}
+h1 {
+  color: white;
+  margin: 5px 20px;
+  text-align: left;
 }
 .main {
-  background-color: #160106;
-  color: white;
-  padding: 0px 15px 15px 15px;
-  width: 23%;
-  margin: 20vh auto;
+  color: var(--bluefont);
+  padding: 0px 0px 15px 0px;
+  width: 28%;
+  margin: 10vh auto;
   text-align: center;
   border-radius: 10px;
 }

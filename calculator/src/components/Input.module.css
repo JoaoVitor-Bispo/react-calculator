@@ -1,9 +1,15 @@
+
 .divInput {
     margin-bottom: 15px;
 }
 .divInput > input {
-    width: 80%;
-    height: 35px;
+    background-color: #182034;
+    color: white;
+    width: 90%;
+    padding: 30px 10px 8px 12px;
+    font-size: 30px;
+    font-weight: lighter;
+    border: none;
     border-radius: 8px;
-    padding: 0px 15px;
+    text-align: right;
 }

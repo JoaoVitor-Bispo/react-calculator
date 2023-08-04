@@ -3,18 +3,29 @@ import { useState } from "react";
 
 function Calculator({expression}) {
 
-    const [resolved, setResolved] = useState([])
     const array = []
 
     for(let c in expression) {
         array.push(expression[c])
-        if(expression[c] == '=' || expression[c] == 'C' || expression[c] == 'x') {
+
+        if(expression[c] === '=' || expression[c] === 'C' || expression[c] === 'x') {
             array.pop()
+            
             switch(expression[c]) {
                 case '=':
-                    const calc = eval(array.join(''))
-                    array.splice(0, array.length)
-                    array.push(calc)
+                    let calc = 0
+
+                    try {
+                        calc = eval(array.join(''))
+
+                    }
+                    catch {
+                        calc = undefined
+                    }
+                    finally {
+                        array.splice(0, array.length)
+                        array.push(calc)
+                    }
                     break
 
                     case 'x':
@@ -27,11 +38,10 @@ function Calculator({expression}) {
             }
         }
     }
-        console.log(array)
     return (
-        <div>
-            <Input value={array}/>
-        </div>
+        <>
+            <Input result={array}/>
+        </>
     )
 }
 export default Calculator;

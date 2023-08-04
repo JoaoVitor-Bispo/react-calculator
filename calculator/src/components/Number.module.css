@@ -1,19 +1,41 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
 .divNums {
+    background-color: #232C43;
     width: 90%;
     margin: auto;
+    padding: 12px 10px;
+    font-size: 30px;
+    border-radius: 12px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-template-areas: 'clear clear delete delete';
 }
 .divNums > div {
-    background-color: #222222;
-    margin: 5px;
-    padding: 8px;
-    font-size: 22px;
+    background-color: #EAE3DC;
+    margin: 8px;
+    font-weight: bolder;
+    padding: 3px 0px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 1px #B4A597;
 }
-.num16 { 
-    grid-area: delete;
+#num3 {
+    background-color: #637097;
+    color: white;
+    box-shadow: 0px 4px 1px #404E72;
 }
-.num17 {
-    grid-area: clear;
+#num16 { 
+    background-color: #D03F2F;
+    color: white;
+    box-shadow: 0px 4px 1px #93261A;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#num17 {
+    background-color: #637097;
+    color: white;
+    box-shadow: 0px 4px 1px #404E72;
+    grid-column-start: 3; 
+    grid-column-end: 5;
 }

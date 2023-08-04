@@ -1,16 +1,9 @@
 import styles from './Input.module.css'
-import Calculator from './Calculator';
 
-function Input({value}) {
-    const array = []
+function Input({result}) {
     return (
         <div className={styles.divInput}>
-            <input type="number" className='input'/>
-            { 
-                value ?? (
-                    document.querySelector('.input').value = value.join('')
-                )
-            }
+            <input type="text"  className='input' value={result.join('')}/>
         </div>
     )
 }
