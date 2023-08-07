@@ -1,13 +1,12 @@
 import './App.css';
 import Numbers from './components/Numbers';
+import Themes from './components/design/Themes';
 
 function App() {
+
   return (
       <div className="App">
-        <div className="main">
-          <h1>Calc</h1>
-          <Numbers/>
-        </div>
+          <Themes/>
       </div>
   );
 }

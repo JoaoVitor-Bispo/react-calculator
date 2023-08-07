@@ -3,8 +3,6 @@
     margin-bottom: 15px;
 }
 .divInput > input {
-    background-color: #182034;
-    color: white;
     width: 90%;
     padding: 30px 10px 8px 12px;
     font-size: 30px;
@@ -12,4 +10,16 @@
     border: none;
     border-radius: 8px;
     text-align: right;
+}
+#blue > input {
+    background-color: #182034;
+    color: white;
+}
+#purple > input {
+    background-color: #1D0934;
+    color: #FFE53D;
+}
+#white > input {
+    background-color: #EDEDED;
+    color: #35352C;
 }

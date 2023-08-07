@@ -1,7 +1,7 @@
 import Input from "./Input";
 import { useState } from "react";
 
-function Calculator({expression}) {
+function Calculator({expression, theme}) {
 
     const array = []
 
@@ -40,7 +40,7 @@ function Calculator({expression}) {
     }
     return (
         <>
-            <Input result={array}/>
+            <Input result={array} theme={theme}/>
         </>
     )
 }
