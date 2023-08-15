@@ -22,29 +22,14 @@
     width: 40%;
     height: 25px;
     font-weight: bolder;
-    display: inline-block;
-    border-radius: 18px;
-    border: none;
-}
-.input:hover {
-    opacity: 0.8;
+    display: flex;
+    flex-flow: row nowrap;
 }
 label {
     font-weight: bolder;
 }
-#divblue .div1 {
-    color: #EAE3DC;
-}
-#divwhite {
-    color: #35352C;
-}
-input#purple {
-    background-color: #1D0934;
-    color: #00E0D1;
-}
-input#blue {
+div#blue {
     background-color: #182034;
-    color: #D03F2F;
 }
 #divpurple {
     color: #FFE53D;

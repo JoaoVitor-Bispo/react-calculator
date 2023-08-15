@@ -4,7 +4,8 @@ import styles from './Themes.module.css'
 
 function Themes(color) {
     const [Theme, setTheme] = useState('blue')
-    const [order, setOrder] = useState(2)
+    const [order, setOrder] = useState(1)
+    
 
     const themes = [
         {
@@ -23,27 +24,33 @@ function Themes(color) {
             bg: '#250a44'
         }
     ]
-    const defColor = (e) => {
-        setOrder(order + 1)
-        if(order > 2) {
-            setOrder(1)
-        }
 
+    const defColor = (e) => {
+        console.log(e.target.value)
         themes.map((element, index) => {
-            if(element.index == order) {
+            if(element.index == e.target.value) {
                 setTheme(element.design)
                 document.documentElement.style.backgroundColor = element.bg
             }
         })
-
     }
+
     return (
         <div className={styles.container} id={styles['div'+Theme]}>
             <div className={styles.div1}>
                 <h1>Calc</h1>
                 <div className={styles.themecontain}>
                     <label htmlFor={Theme}>THEME</label>
-                    <input type="button" className={styles.input} name={Theme} id={styles[Theme]} onClick={defColor} value={order}/>
+                    <div className={styles.input} id={styles[Theme]}>
+                            <input type="radio" name="inputs" className={styles.radios} id={styles.radio1} value='1' onClick={defColor} checked/>
+                            <label htmlFor="radio1"></label>
+
+                            <input type="radio" name="inputs" className={styles.radios} id={styles.radio2} value='2' onClick={defColor}/>
+                            <label htmlFor="radio2"></label>
+
+                            <input type="radio" name="inputs" className={styles.radios} id={styles.radio3} value='3' onClick={defColor}/>
+                        <label htmlFor="radio3"></label>
+                    </div>
                 </div>
             </div>
             <Number teste={Theme}/>
