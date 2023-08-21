@@ -1,19 +1,15 @@
 .container {
-    width: 350px;
-    padding: 0px 0px 15px 0px;
-    margin: 10vh auto;
-    text-align: center;
+    width: 360px;
+    margin: 8vh auto;
     border-radius: 10px;
 }
 .div1 {
     padding: 5px;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-between;
 }
 .themecontain {
     width: 50%;
-    padding-right: 8px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -23,10 +19,8 @@
     height: 25px;
     padding: 2px;
     margin: 5px 0px;
-    font-weight: bolder;
     border-radius: 30px;
     display: flex;
-    flex-flow: row nowrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -42,12 +36,16 @@
 }
 label {
     font-weight: bolder;
+    margin-top: 15px;
 }
 #divblue {
     color: #EAE3DC;
 }
 #divpurple {
     color: #FFE53D;
+}
+#divwhite {
+    color: #35352C;
 }
 #purple {
     background-color: #1D0934;
@@ -59,7 +57,6 @@ label {
     background-color: #D1CCCC;
 }
 span {
-    display: inline-block;
-    margin: 0px 7px;
+    margin: 0px 8px;
     font-weight: bolder;
 }

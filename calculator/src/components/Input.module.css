@@ -1,14 +1,13 @@
-
 .divInput {
     margin-bottom: 15px;
 }
 .divInput > input {
     width: 90%;
-    padding: 30px 10px 8px 12px;
+    padding: 35px 10px 8px 12px;
+    margin-top: 6px;
     font-size: 30px;
-    font-weight: lighter;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: right;
 }
 #blue > input {

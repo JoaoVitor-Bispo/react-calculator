@@ -35,7 +35,7 @@ function Themes(color) {
                 selected.style.backgroundColor = 'red'
 
                 if(selected.value == 3) {
-                    selected.style.backgroundColor = 'blue'
+                    selected.style.backgroundColor = '#00E0D1'
                 }
                 return false
             }
@@ -53,7 +53,7 @@ function Themes(color) {
     return (
         <div className={styles.container} id={styles['div'+Theme]}>
             <div className={styles.div1}>
-                <h1>Calc</h1>
+                <h1>calc</h1>
                 <div className={styles.themecontain}>
                     <label htmlFor={Theme}>THEME</label>
                     <div>

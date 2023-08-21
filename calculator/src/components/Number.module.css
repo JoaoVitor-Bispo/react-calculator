@@ -5,24 +5,22 @@
 
 #divNums {
     width: 90%;
-    margin: auto;
     padding: 12px 10px;
-    font-size: 30px;
+    font-size: 35px;
     border-radius: 12px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-}
-#divNums:hover {
-    cursor: default;
 }
 #divNums > div {
     margin: 8px;
     font-weight: bolder;
     padding: 3px 0px;
     border-radius: 4px;
+    text-align: center;
 }
 #divNums > div:hover {
     opacity: 0.8;
+    cursor: default;
 }
 #divNums > div:active {
     transition-property: scale;
@@ -46,7 +44,7 @@
     background-color: #EAE3DC;
     box-shadow: 0px 4px 1px #B4A597;
 }
-.divblue > .num3 {
+.divblue > .num3, .divblue > .num17 {
     background-color: #637097;
     color: white;
     box-shadow: 0px 4px 1px #404E72;
@@ -56,11 +54,6 @@
     color: white;
     box-shadow: 0px 4px 1px #93261A;
 }
-.divblue > .num17 {
-    background-color: #637097;
-    color: white;
-    box-shadow: 0px 4px 1px #404E72;
-}
 
 /* --> PURPLE DIV <-- */
 .divpurple {
@@ -68,7 +61,6 @@
 }
 .divpurple > div {
     background-color: #58077D;
-    color: #FFE53D;
     box-shadow: 0px 4px 1px #BC15F4;
 }
 .divpurple > .num16{
@@ -76,7 +68,7 @@
     color: #1B2428;
     box-shadow: 0px 4px 1px #53c2bc;
 }
-.divpurple > .num17, .num3 {
+.divpurple > .num17, .divpurple > .num3 {
     background-color: #341C4F;
     color: white;
     box-shadow: 0px 4px 1px #871C9C;
@@ -85,7 +77,6 @@
 /* --> WHITE DIV <-- */
 .divwhite {
     background-color: #D1CCCC;
-    color: #35352C;
 }
 .divwhite > div {
     background-color: #E5E4E1;
