@@ -3,10 +3,12 @@ import Number from "../Numbers"
 import styles from './Themes.module.css'
 
 function Themes(color) {
-    const [Theme, setTheme] = useState('blue')
-    const [order, setOrder] = useState(1)
-    
 
+    const [Theme, setTheme] = useState('blue')
+    const [Color, setColor] = useState('red')
+
+    window.onload = e => document.documentElement.style.backgroundColor = '#3A4764'
+    
     const themes = [
         {
             index: 1,
@@ -26,7 +28,20 @@ function Themes(color) {
     ]
 
     const defColor = (e) => {
-        console.log(e.target.value)
+        const selected = e.target;
+
+        [...document.querySelectorAll('button')].map((element, index) => {
+            if(selected == element) {
+                selected.style.backgroundColor = 'red'
+
+                if(selected.value == 3) {
+                    selected.style.backgroundColor = 'blue'
+                }
+                return false
+            }
+            element.style.backgroundColor = 'transparent'
+        })
+
         themes.map((element, index) => {
             if(element.index == e.target.value) {
                 setTheme(element.design)
@@ -41,15 +56,13 @@ function Themes(color) {
                 <h1>Calc</h1>
                 <div className={styles.themecontain}>
                     <label htmlFor={Theme}>THEME</label>
-                    <div className={styles.input} id={styles[Theme]}>
-                            <input type="radio" name="inputs" className={styles.radios} id={styles.radio1} value='1' onClick={defColor} checked/>
-                            <label htmlFor="radio1"></label>
-
-                            <input type="radio" name="inputs" className={styles.radios} id={styles.radio2} value='2' onClick={defColor}/>
-                            <label htmlFor="radio2"></label>
-
-                            <input type="radio" name="inputs" className={styles.radios} id={styles.radio3} value='3' onClick={defColor}/>
-                        <label htmlFor="radio3"></label>
+                    <div>
+                        <span>1</span><span>2</span><span>3</span>
+                        <div className={styles.input} id={styles[Theme]}>
+                                <button type="radio"className={styles.radio1} id="radio1" value='1' onClick={defColor}></button>
+                                <button type="radio"className={styles.radio2} id="radio2" value='2' onClick={defColor}></button>
+                                <button type="radio" name="inputs" className={styles.radio3} id="radio3" value='3' onClick={defColor}></button>
+                        </div>
                     </div>
                 </div>
             </div>

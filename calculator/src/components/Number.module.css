@@ -12,21 +12,27 @@
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
 }
+#divNums:hover {
+    cursor: default;
+}
 #divNums > div {
     margin: 8px;
     font-weight: bolder;
     padding: 3px 0px;
     border-radius: 4px;
 }
+#divNums > div:hover {
+    opacity: 0.8;
+}
 #divNums > div:active {
     transition-property: scale;
     scale: 0.9;
 }
-#num16 { 
+.num16 { 
     grid-column-start: 1;
     grid-column-end: 3;
 }
-#num17 {
+.num17 {
     grid-column-start: 3; 
     grid-column-end: 5;
 }
@@ -40,17 +46,17 @@
     background-color: #EAE3DC;
     box-shadow: 0px 4px 1px #B4A597;
 }
-.divblue > #num3 {
+.divblue > .num3 {
     background-color: #637097;
     color: white;
     box-shadow: 0px 4px 1px #404E72;
 }
-.divblue > #num16 {
+.divblue > .num16 {
     background-color: #D03F2F;
     color: white;
     box-shadow: 0px 4px 1px #93261A;
 }
-.divblue > #num17 {
+.divblue > .num17 {
     background-color: #637097;
     color: white;
     box-shadow: 0px 4px 1px #404E72;
@@ -65,12 +71,12 @@
     color: #FFE53D;
     box-shadow: 0px 4px 1px #BC15F4;
 }
-.divpurple > #num16{
+.divpurple > .num16{
     background-color: #00E0D1;
     color: #1B2428;
     box-shadow: 0px 4px 1px #53c2bc;
 }
-.divpurple > #num17, #num3 {
+.divpurple > .num17, .num3 {
     background-color: #341C4F;
     color: white;
     box-shadow: 0px 4px 1px #871C9C;
@@ -82,15 +88,15 @@
     color: #35352C;
 }
 .divwhite > div {
-    background-color: #EAE3DC;
+    background-color: #E5E4E1;
     box-shadow: 0px 4px 1px #B4A597;
 }
-.divwhite > #num3, #num17 {
+.divwhite > .num3, .divwhite > .num17 {
     background-color: #377F86;
     color: white;
     box-shadow: 0px 4px 1px #1B5F65;
 }
-.divwhite > #num16 {
+.divwhite > .num16 {
     background-color: #D03F2F;
     color: white;
     box-shadow: 0px 4px 1px #93261A;

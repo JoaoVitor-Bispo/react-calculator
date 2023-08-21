@@ -24,7 +24,7 @@ function Number({teste}) {
             <div className={styles['div'+teste]} id={styles.divNums}>
                 {
                     areaButtons.map((element, index) => (
-                        <div onClick={setNum} key={index} id={`${styles['num'+index]}`}>{element}</div>
+                        <div onClick={setNum} key={index} className={`${styles['num'+index]}`} id={`${'num'+index}`}>{element}</div>
                     ))
                 }
             </div>
