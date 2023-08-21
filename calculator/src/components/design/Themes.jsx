@@ -5,7 +5,6 @@ import styles from './Themes.module.css'
 function Themes(color) {
 
     const [Theme, setTheme] = useState('blue')
-    const [Color, setColor] = useState('red')
 
     window.onload = e => document.documentElement.style.backgroundColor = '#3A4764'
     
